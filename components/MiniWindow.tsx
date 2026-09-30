@@ -11,7 +11,7 @@ export default function IntroWindow() {
             dragListener={false}
             dragControls={controls}
             dragConstraints={{ left: -400, right: 400, top: -200, bottom: 200 }}
-            className="w-72 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
+            className="w-100 h-40 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
         >
         {/* Title bar */}
         <div
@@ -25,8 +25,9 @@ export default function IntroWindow() {
         </div>
 
         {/* Content */}
-        <div className="p-4 text-neutral-200 text-sm">
-            <p>Im maria hi hi hi</p>
+        <div className="p-4 text-neutral-200 text-xl">
+            <p>Hi, I&apos;m Maria!</p>
+            <p className="text-sm pt-3">I am really really cool please hire me please <br/> I can code kinda haha</p>
         </div>
         </motion.div>
     );

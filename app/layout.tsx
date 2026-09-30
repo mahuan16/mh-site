@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-import { Silkscreen } from 'next/font/google';
+import { Outfit, Silkscreen } from 'next/font/google';
 
 
 
@@ -19,9 +19,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const outfit = Outfit({
+  subsets: ['latin'],
+  variable: '--font-outfit',
+});
+
 const silkscreen = Silkscreen({
      subsets: ['latin'],
-     weight: ['400', '700'], // this font only ships regular (400) and bold (700)
+     weight: ['400', '700'], 
+     variable: '--font-silkscreen'
    });
 
 export const metadata: Metadata = {
@@ -35,9 +41,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="h-screen flex flex-col">
+      <body className={`${outfit.variable} ${silkscreen.variable} font-sans not-[]:h-screen flex flex-col`} >
         <Navbar fontClass={silkscreen.className} />
-          <main className="flex-1">
+          <main className="flex-1 h-full">
           {children}
           </main>
         <Footer fontClass={silkscreen.className} />

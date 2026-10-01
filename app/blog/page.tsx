@@ -18,7 +18,7 @@ export default async function BlogPage({
   const postsToShow = allPosts.slice(startIndex, startIndex + POSTS_PER_PAGE);
 
   return (
-    <div className="relative min-h-full bg-[#12152c] pt-px">
+    <div className="relative min-h-full bg-[var(--background)]">
       <div className="fixed inset-0 overflow-hidden">
         <svg
           width="100%"
@@ -61,15 +61,15 @@ export default async function BlogPage({
         </svg>
       </div>
 
-      <section className="relative z-10 p-8 pt-20 mt-5 max-w-3xl mx-auto">
-        <h1 className="font-pixel text-4xl mb-8 text-white text-center">Blog</h1>
+      <section className="relative z-10 px-5 pt-28 pb-12 sm:px-8 sm:pb-8 max-w-3xl mx-auto">
+        <h1 className="font-pixel text-3xl sm:text-4xl mb-8 text-white text-center">Blog</h1>
 
         <div className="flex flex-col gap-6">
           {postsToShow.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="block p-5 rounded-xl bg-neutral-800/60 border border-white/5 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-blue-400/30 hover:bg-neutral-800"
+              className="block p-5 rounded-2xl bg-slate-900/70 border border-white/10 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-sky-300/30 hover:bg-slate-900"
             >
               <div className="flex items-center gap-3 mb-1 flex-wrap">
                 <h2 className="font-pixel text-xl text-blue-300">{post.title}</h2>

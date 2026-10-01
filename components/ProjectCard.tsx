@@ -9,21 +9,21 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ title, summary, image, repoUrl }: ProjectCardProps) {
   return (
-    <div className="bg-neutral-900 rounded-xl overflow-hidden shadow-lg">
-      <div className="relative w-full h-48">
+    <article className="bg-slate-900/90 rounded-2xl overflow-hidden border border-white/10 shadow-lg transition-transform duration-200 hover:-translate-y-1 hover:border-sky-300/40">
+      <div className="relative w-full aspect-[16/10]">
         <Image src={image} alt={title} fill className="object-cover" />
       </div>
-      <div className="p-4">
+      <div className="p-5">
         <h3 className="text-xl font-bold text-white">{title}</h3>
-        <p className="text-neutral-400 mt-2 text-sm">{summary}</p>
+        <p className="text-slate-300 mt-2 text-sm leading-relaxed">{summary}</p>
         <a
           href={repoUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-4 text-blue-400 hover:text-blue-300 transition-colors">
+          className="inline-block mt-4 text-sky-300 hover:text-white transition-colors">
           View Repo →
         </a>
       </div>
-    </div>
+    </article>
   );
 }

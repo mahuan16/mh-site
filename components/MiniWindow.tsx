@@ -10,8 +10,8 @@ export default function IntroWindow() {
             drag
             dragListener={false}
             dragControls={controls}
-            dragConstraints={{ left: -400, right: 400, top: -200, bottom: 200 }}
-            className="w-100 h-40 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
+            dragConstraints={{ left: -400, right: 400, top: -100, bottom: 200 }}
+            className="absolute top-40 left-30 w-100 h-40 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
         >
         {/* Title bar */}
         <div
@@ -42,7 +42,7 @@ export function InterestWindow(){
             dragListener={false}
             dragControls={controls}
             dragConstraints={{ left: -400, right: 400, top: -200, bottom: 200 }}
-            className="w-72 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
+            className="absolute top-90 left-30 w-72 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
         >
         {/* Title bar */}
         <div
@@ -61,4 +61,39 @@ export function InterestWindow(){
         </div>
         </motion.div>
     );
+}
+
+export function SpotifyWindow() {
+  const controls = useDragControls();
+
+  return (
+    <motion.div
+      drag
+      dragListener={false}
+      dragControls={controls}
+      dragConstraints={{ left: -200, right: 200, top: -100, bottom: 100 }}
+      className="absolute top-40 right-24 w-80 h-60 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
+    >
+      <div
+        onPointerDown={(e) => controls.start(e)}
+        className="flex items-center gap-2 bg-neutral-800/80 px-3 py-2 cursor-grab"
+      >
+        <span className="w-3 h-3 rounded-full bg-red-500" />
+        <span className="w-3 h-3 rounded-full bg-yellow-500" />
+        <span className="w-3 h-3 rounded-full bg-green-500" />
+        <span className="ml-2 text-xs text-neutral-400">now-playing.txt</span>
+      </div>
+
+      <div className="p-3 flex justify-center items-center">
+        <iframe
+          src="https://open.spotify.com/embed/track/2aL4lMGhWdPpyPL6COPou7?utm_source=generator&si=f850178a8aff4db4"
+          width="100%"
+          height="152"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+          className="rounded-lg"
+        />
+      </div>
+    </motion.div>
+  );
 }

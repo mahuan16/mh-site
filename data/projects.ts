@@ -6,18 +6,18 @@ export const projects = [
     repoUrl: "https://github.com/yourusername/project-one",
   },
   {
-    title: "Project Two",
+    title: "Project Tasd",
     summary: "Anasdfvcdsafdsaf.",
     image: "/projects/project2.jpg",
     repoUrl: "https://github.com/yourusername/project-two",
   },{
-    title: "Project One",
+    title: "Project asdfe",
     summary: "this thing does that thing",
     image: "/projects/project1.jpg",
     repoUrl: "https://github.com/yourusername/project-one",
   },
   {
-    title: "Project Two",
+    title: "Project asdfo",
     summary: "Anasdfvcdsafdsaf.",
     image: "/projects/project2.jpg",
     repoUrl: "https://github.com/yourusername/project-two",

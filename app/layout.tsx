@@ -41,9 +41,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className={`${outfit.variable} ${silkscreen.variable} font-sans not-[]:h-screen flex flex-col`} >
+      <body className={`${outfit.variable} ${silkscreen.variable} font-sans h-screen flex flex-col`}>
         <Navbar fontClass={silkscreen.className} />
-          <main className="flex-1 h-full">
+          <main className="flex-1">
           {children}
           </main>
         <Footer fontClass={silkscreen.className} />

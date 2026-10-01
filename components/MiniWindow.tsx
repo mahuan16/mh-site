@@ -10,8 +10,8 @@ export default function IntroWindow() {
             drag
             dragListener={false}
             dragControls={controls}
-            dragConstraints={{ left: -400, right: 400, top: -100, bottom: 200 }}
-            className="absolute top-24 left-4 right-4 sm:top-32 sm:left-[8%] sm:right-auto w-auto sm:w-[min(25rem,38vw)] min-h-40 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
+            dragConstraints={{ left: -100, right: 700, top: 0, bottom: 350 }}
+            className="absolute top-24 left-4 right-4 sm:top-50 sm:left-[8%] sm:right-auto w-auto sm:w-[min(25rem,38vw)] min-h-40 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
         >
         {/* Title bar */}
         <div
@@ -41,8 +41,8 @@ export function InterestWindow(){
             drag
             dragListener={false}
             dragControls={controls}
-            dragConstraints={{ left: -400, right: 400, top: -200, bottom: 200 }}
-            className="absolute top-[17rem] left-4 sm:top-[22rem] sm:left-[12%] w-[calc(100%-2rem)] sm:w-72 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
+            dragConstraints={{ left: -100, right: 700, top: -200, bottom: 150 }}
+            className="absolute top-68  left-4 sm:top-95 sm:left-[8%] w-[calc(100%-2rem)] sm:w-72 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
         >
         {/* Title bar */}
         <div
@@ -71,8 +71,8 @@ export function SpotifyWindow() {
       drag
       dragListener={false}
       dragControls={controls}
-      dragConstraints={{ left: -200, right: 200, top: -100, bottom: 100 }}
-      className="absolute top-[27rem] left-4 right-4 sm:top-40 sm:left-auto sm:right-[8%] w-auto sm:w-80 min-h-60 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
+      dragConstraints={{ left: -700, right: 50, top: -50, bottom: 200 }}
+      className="absolute top-120 left-4 right-4 sm:top-55 sm:left-auto sm:right-[8%] w-auto sm:w-80 min-h-60 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
     >
       <div
         onPointerDown={(e) => controls.start(e)}

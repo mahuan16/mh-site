@@ -12,7 +12,7 @@ export default function ContactPage() {
           className="absolute inset-0 bg-cover bg-top bg-no-repeat"
           style={{ backgroundImage: "url('/contact-bg.jpg')" }}
         />
-        <div className="absolute inset-0 bg-slate-950/10" />
+        <div className="absolute inset-0 bg-gray-500 mix-blend-multiply" />
       </div>
 
       {/* Left: contact form, mac-window style */}

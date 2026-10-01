@@ -98,7 +98,7 @@ export default async function BlogPage({
             </Link>
           )}
 
-          <span className="text-neutral-400 text-sm">
+          <span className="text-gray-300 text-sm">
             Page {currentPage} of {totalPages}
           </span>
 

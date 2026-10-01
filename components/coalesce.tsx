@@ -191,5 +191,5 @@ export default function CoalesceBackground() {
     };
   }, []);
 
-  return <div ref={containerRef} className="absolute inset-0 -z-10" />;
+  return <div ref={containerRef} className="absolute inset-0 z-0" />;
 }

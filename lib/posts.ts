@@ -2,9 +2,18 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-const postsDirectory = path.join(process.cwd(), "data/posts"); // get the folder where posts are
+const postsDirectory = path.join(process.cwd(), "data/posts");
 
-export function getAllPosts() {
+export type Post = {
+  slug: string;
+  title: string;
+  date: string;
+  summary: string;
+  tags?: string[];
+  content: string;
+};
+
+export function getAllPosts(): Post[] {
   const filenames = fs.readdirSync(postsDirectory);
 
   const posts = filenames.map((filename) => {
@@ -14,7 +23,10 @@ export function getAllPosts() {
 
     return {
       slug: filename.replace(/\.md$/, ""),
-      ...data,
+      title: data.title,
+      date: data.date,
+      summary: data.summary,
+      tags: data.tags,
       content,
     };
   });
@@ -22,10 +34,17 @@ export function getAllPosts() {
   return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
-export function getPostBySlug(slug: string) {
+export function getPostBySlug(slug: string): Post {
   const filePath = path.join(postsDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(fileContents);
 
-  return { slug, ...data, content };
+  return {
+    slug,
+    title: data.title,
+    date: data.date,
+    summary: data.summary,
+    tags: data.tags,
+    content,
+  };
 }

@@ -1,4 +1,4 @@
-import { getPostBySlug, getAllPosts } from "@/lib/posts";
+import { getPostBySlug, getAllPosts, Post } from "@/lib/posts";
 import ReactMarkdown from "react-markdown";
 
 export function generateStaticParams() {

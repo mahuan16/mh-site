@@ -21,8 +21,8 @@ export default function ProjectsPage() {
             <span className="ml-2 text-xs text-neutral-400">current-project.txt</span>
           </div>
           <div className="p-6 text-neutral-200">
-            <h3 className="text-xl font-bold text-white mb-2">NAME HERE</h3>
-            <p className="text-sm leading-relaxed">BLABLABLABLALBLBAL</p>
+            <h3 className="text-xl font-bold text-white mb-2">Intern Bot</h3>
+            <p className="text-sm leading-relaxed">InternBot is a Discord bot that scrapes internship-posting sources (like GitHub's crowdsourced internship lists) for new listings, then posts them to a Discord channel as formatted embeds with interactive buttons and a dropdown. Users can mark postings as "Interested" or "Not Interested," and track their application progress (Not Started / In Progress / Waiting on Result) directly from the message. The bot stores everything in a SQLite database, avoids re-posting duplicates, and will send reminders to users who still have applications in progress.</p>
           </div>
         </div>
       </section>

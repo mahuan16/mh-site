@@ -27,7 +27,7 @@ export default function IntroWindow() {
         {/* Content */}
         <div className="p-4 text-neutral-200 text-xl">
             <p>Hi, I&apos;m Maria!</p>
-            <p className="text-sm pt-3">I am really really cool please hire me please <br/> I can code kinda haha</p>
+            <p className="text-sm pt-3">I&apos;m an apsiring Software Engineer who&apos;s really passionate about Robotics (I love making things move!)<br/> Welcome to my personal website! Take a look at this homepage and my blogs to learn more about me, and check out my projects tab to see what I&apos;ve been up to :D</p>
         </div>
         </motion.div>
     );
@@ -42,7 +42,7 @@ export function InterestWindow(){
             dragListener={false}
             dragControls={controls}
             dragConstraints={{ left: -100, right: 700, top: -200, bottom: 150 }}
-            className="absolute top-68  left-4 sm:top-95 sm:left-[8%] w-[calc(100%-2rem)] sm:w-72 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
+            className="absolute top-68  left-4 sm:top-105 sm:left-[8%] w-[calc(100%-2rem)] sm:w-72 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
         >
         {/* Title bar */}
         <div
@@ -57,7 +57,7 @@ export function InterestWindow(){
 
         {/* Content */}
         <div className="p-4 text-neutral-200 text-sm">
-            <p>CS undergrad @ Berkeley; I love robots heh</p>
+            <p>CS undergrad @ Berkeley; Passionate about webdev, Robotics (localization, control systems, computer vision), and digital art</p>
         </div>
         </motion.div>
     );

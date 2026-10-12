@@ -11,7 +11,7 @@ export default function IntroWindow() {
             dragListener={false}
             dragControls={controls}
             dragConstraints={{ left: -100, right: 700, top: 0, bottom: 350 }}
-            className="absolute top-24 left-4 right-4 sm:top-50 sm:left-[8%] sm:right-auto w-auto sm:w-[min(25rem,38vw)] min-h-40 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
+            className="absolute top-24 left-4 right-4 sm:top-45 sm:left-[8%] sm:right-auto w-auto sm:w-[min(25rem,38vw)] min-h-40 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
         >
         {/* Title bar */}
         <div
@@ -42,7 +42,7 @@ export function InterestWindow(){
             dragListener={false}
             dragControls={controls}
             dragConstraints={{ left: -100, right: 700, top: -200, bottom: 150 }}
-            className="absolute top-68  left-4 sm:top-105 sm:left-[8%] w-[calc(100%-2rem)] sm:w-72 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
+            className="absolute top-80  left-4 sm:top-105 sm:left-[8%] w-[calc(100%-2rem)] sm:w-72 bg-neutral-900/80 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl overflow-hidden"
         >
         {/* Title bar */}
         <div

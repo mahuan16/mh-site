@@ -1,5 +1,6 @@
 import { Mail } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import ContactsForm from '@/components/ContactsForm';
 
 export default function ContactPage() {
   return (
@@ -26,29 +27,7 @@ export default function ContactPage() {
 
         <div className="p-6">
           <h1 className="font-pixel text-2xl sm:text-3xl mb-6 text-sky-300">Get In Touch</h1>
-          <form className="flex flex-col gap-4">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="p-3 rounded-lg bg-neutral-800/60 text-white border border-white/10 focus:outline-none focus:border-blue-400 transition-colors placeholder:text-neutral-500"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="p-3 rounded-lg bg-neutral-800/60 text-white border border-white/10 focus:outline-none focus:border-blue-400 transition-colors placeholder:text-neutral-500"
-            />
-            <textarea
-              placeholder="Your Message"
-              rows={5}
-              className="p-3 rounded-lg bg-neutral-800/60 text-white border border-white/10 focus:outline-none focus:border-blue-400 transition-colors placeholder:text-neutral-500"
-            />
-            <button
-              type="submit"
-              className="bg-sky-500 hover:bg-sky-400 transition-colors text-slate-950 py-3 rounded-lg font-semibold"
-            >
-              Send Message
-            </button>
-          </form>
+           <ContactsForm />
         </div>
       </div>
 
@@ -56,16 +35,16 @@ export default function ContactPage() {
       <div className="relative z-10 flex-1 max-w-md w-full flex flex-col items-start gap-4">
         <h2 className="font-pixel text-2xl mb-2 text-sky-300">Find Me Elsewhere</h2>
 
-        <a href="/resume.pdf" download className="flex text-white items-center gap-2 hover:text-blue-400 transition-colors">
+        <a href="/Maria_Huan_Resume.pdf" download className="flex text-white items-center gap-2 hover:text-blue-400 transition-colors">
           Download Resume
         </a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="flex text-white items-center gap-2 hover:text-blue-400 transition-colors">
+        <a href="https://www.linkedin.com/in/maria-huan-7783b2315/" target="_blank" rel="noopener noreferrer" className="flex text-white items-center gap-2 hover:text-blue-400 transition-colors">
           <FaLinkedin size={18} /> LinkedIn
         </a>
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="flex text-white items-center gap-2 hover:text-blue-400 transition-colors">
+        <a href="https://github.com/mahuan16" target="_blank" rel="noopener noreferrer" className="flex text-white items-center gap-2 hover:text-blue-400 transition-colors">
           <FaGithub size={18} /> GitHub
         </a>
-        <a href="mailto:youremail@gmail.com" className="flex items-center text-white gap-2 hover:text-blue-400 transition-colors">
+        <a href="mailto:mahuan@berkeley.edu" className="flex items-center text-white gap-2 hover:text-blue-400 transition-colors">
           <Mail size={18} /> Email
         </a>
       </div>

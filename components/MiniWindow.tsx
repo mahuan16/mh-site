@@ -27,7 +27,7 @@ export default function IntroWindow() {
         {/* Content */}
         <div className="p-4 text-neutral-200 text-xl">
             <p>Hi, I&apos;m Maria!</p>
-            <p className="text-sm pt-3">I&apos;m an apsiring Software Engineer who&apos;s really passionate about Robotics (I love making things move!)<br/> Welcome to my personal website! Take a look at this homepage and my blogs to learn more about me, and check out my projects tab to see what I&apos;ve been up to :D</p>
+            <p className="text-sm pt-3">I&apos;m an aspiring Software Engineer who&apos;s really passionate about Robotics (I love making things move!)<br/> Welcome to my personal website! Take a look at this homepage and my blogs to learn more about me, and check out my projects tab to see what I&apos;ve been up to :D</p>
         </div>
         </motion.div>
     );

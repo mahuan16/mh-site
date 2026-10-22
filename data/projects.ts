@@ -1,5 +1,11 @@
 export const projects = [
   {
+    title: "Feature Detector Comparisons",
+    summary: "A Discord bot that finds new internship postings and lets users track interest and application status with one click.",
+    image: "/projects/feature-detector.png",
+    repoUrl: "https://github.com/mahuan16/feature-detectors",
+  },
+  {
     title: "Intern Bot",
     summary: "A Discord bot that finds new internship postings and lets users track interest and application status with one click.",
     image: "/projects/intern-bot.jpg",

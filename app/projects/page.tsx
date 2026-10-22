@@ -21,8 +21,18 @@ export default function ProjectsPage() {
             <span className="ml-2 text-xs text-neutral-400">current-project.txt</span>
           </div>
           <div className="p-6 text-neutral-200">
-            <h3 className="text-xl font-bold text-white mb-2">Intern Bot</h3>
-            <p className="text-sm leading-relaxed">InternBot is a Discord bot that scrapes internship-posting sources (like GitHub's crowdsourced internship lists) for new listings, then posts them to a Discord channel as formatted embeds with interactive buttons and a dropdown. Users can mark postings as "Interested" or "Not Interested," and track their application progress (Not Started / In Progress / Waiting on Result) directly from the message. The bot stores everything in a SQLite database, avoids re-posting duplicates, and will send reminders to users who still have applications in progress.</p>
+            <h3 className="text-xl font-bold text-white mb-2">Feature Detector Comparison</h3>
+            <p className="text-sm leading-relaxed">I tested three classic 
+              feature detectors (SIFT, ORB, and BRISK) on the HPatches dataset 
+              to see how they hold up under viewpoint and illumination changes (trying to get into visual SLAM!).
+              Using OpenCV, Matplotlib, and Scipy I measured 
+              repeatability, localization error, matching precision and recall, and 
+              speed across 116 image sequences, using the dataset’s homographies 
+              to score results. The detector with the highest repeatability (ORB) 
+              wasn’t the one that matched best (SIFT), demonstrating that finding 
+              the same points again isn’t the same as finding points 
+              that are easy to match. I hope to compare these against a detector I
+              build myself soon and test them in a full visual odometry pipeline!</p>
           </div>
         </div>
       </section>
